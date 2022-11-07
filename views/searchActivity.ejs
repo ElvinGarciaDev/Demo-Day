@@ -10,25 +10,57 @@
 
 <!--BootStrap icon cdn-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <title>Search For A Movie</title>
+    <title>Search For An Attraction Near You</title>
     <link rel="stylesheet" href="searchMovie.css">
 
 </head>
 <body>
 
+      <!--NAV BAR-->
 
-    <section class="pt-5 topSection">
-        <div class="container text-center">
-            <h1>Enter a zip code and find local attractions</h1>
-            <span>Add it to your bookmarks by clicking the add button</span>
-            <a class="btn btn-outline-secondary" role="button" id="profile" href="profile">Profile</a>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">Attraction Finder</a>
 
-            <div class="input-group mb-3 pt-2">
-                <input type="text" class="form-control" placeholder="Zip Code">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <!-- <li class="nav-item">
+                    <a href="#learn" class="nav-link">Activities</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="profile" class="nav-link">Profile</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#instructors" class="nav-link">About</a>
+                </li> -->
+                <li class="nav-item">
+                  <a href="/login" class="nav-link">Log out</a>
+              </li>
+            </ul>
         </div>
-    </section>
+    </div>
+</nav>
+
+    <!--Search, image background-->
+    <div class="background-image">
+
+        <section class=" topSection content">
+            <div class="container text-center">
+                <h1>Enter a zip code and find local attractions</h1>
+                <span>Add it to your bookmarks</span>
+    
+                <div class="input-group mb-3 pt-2">
+                    <input type="text" class="form-control" placeholder="Zip Code">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
     
 
     <!--DISPLAY Attractions-->
@@ -43,6 +75,15 @@
         </div>
 
     </section>
+
+<!-- Back to top button -->
+<button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
     <script src="searchActivity.js"></script>
 

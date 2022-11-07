@@ -4,8 +4,12 @@ module.exports = function(app, passport, db) {
 
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
-        res.render('index.ejs');
+        res.render('login.ejs');
     });
+
+  //   app.get('/public/img/attraction.jpeg', function(req, res) {
+  //     res.send('/public/img/attraction.jpeg');
+  // });
 
     // Get the SeachMovie file
     app.get('/searchActivity', (req, res) => {
