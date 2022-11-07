@@ -1,15 +1,13 @@
-# 🎥 Project: Movie Finder
+# 🎥 Project: Attraction Finder
 
-<img width="900" alt="Screen Shot 2022-11-06 at 4 42 38 PM" src="https://user-images.githubusercontent.com/91163017/200196783-541b538b-3099-47ba-bbdc-e457a5d66bdb.png">
-
-<img width="900" alt="Screen Shot 2022-11-06 at 4 41 40 PM" src="https://user-images.githubusercontent.com/91163017/200196784-94a636cd-b793-4e4f-b3ed-b38e29605f2a.png">
+<img width="700" alt="Screen Shot 2022-11-06 at 9 59 54 PM" src="https://user-images.githubusercontent.com/91163017/200217638-5a618d9f-013f-4eed-8f6d-c4e6b1bc168b.png">
+<img width="700" alt="Screen Shot 2022-11-06 at 10 01 14 PM" src="https://user-images.githubusercontent.com/91163017/200217645-00349e52-ad5b-469a-af5b-2a4b20f4f69a.png">
 
 
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript, Node.js, Express, MongoDB, EJS, Bootstrap
 
-Fullstack application where users can log in, search for a movie and bookmark it. Once a movie is bookmarked it's saved to your profile. Only movies the logged-in user has bookmarked will show on the profile. Once a movie has been bookmarked, the user has the option of clicking the check icon to mark it as completed, or can click the trash icon to delete a movie. The logged-in user has access to only delete the movies on their profile. This prevents any users from removing any similar movies other users might have bookmarked. 
 
 ## Installation
 
