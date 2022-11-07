@@ -1,7 +1,9 @@
 # 🎥 Project: Attraction Finder
 
-<img width="700" alt="Screen Shot 2022-11-06 at 9 59 54 PM" src="https://user-images.githubusercontent.com/91163017/200217638-5a618d9f-013f-4eed-8f6d-c4e6b1bc168b.png">
-<img width="700" alt="Screen Shot 2022-11-06 at 10 01 14 PM" src="https://user-images.githubusercontent.com/91163017/200217645-00349e52-ad5b-469a-af5b-2a4b20f4f69a.png">
+![Untitled_AdobeExpress](https://user-images.githubusercontent.com/91163017/200440855-a4d8ae7c-a760-4f4f-91af-af06e24ea8e1.gif)
+
+![Untitled_AdobeExpress (1)](https://user-images.githubusercontent.com/91163017/200440865-8a4394da-1d41-4c91-997d-b538924b482f.gif)
+
 
 
 ## How It's Made:
