@@ -1,0 +1,14 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-size: contain;
+
+
+}
+
+.card {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <title>Attractions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--BootStrap icon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--NAV BAR-->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">Attraction Finder</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <!-- <li class="nav-item">
+                    <a href="#learn" class="nav-link">Activities</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="searchActivity" class="nav-link">Search for attraction</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#instructors" class="nav-link">About</a>
+                </li> -->
+                <li class="nav-item">
+                  <a href="/logout" class="nav-link">Log out</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Saved attractions-->
+
+<section class="orderDisplay p-4">
+    <div class="container">
+      <div class="row text-center g-0">
+
+
+        <% for(let i = 0; i < Bookmarks.length; i++) {%>
+        
+          <%if (user.local.email === Bookmarks[i].Email) { %>
+  
+  
+            <div class="card" style="width: 19rem;">
+              <img src=<%= Bookmarks[i].Image %>} class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><%= Bookmarks[i].Attraction %></h5>
+                <p class="card-text"><%= Bookmarks[i].Address %></p>
+                <p class="card-text"><%= Bookmarks[i].Description %></p>
+                <span><i class="bi bi-trash"></i></span>
+                <span><i class="bi bi-check-circle"></i></span>
+  
+                <% if (Bookmarks[i].Complete === "true") { %>
+                  <p id="orderComplete">Complete</p>
+                  <%} else { %>
+                  <p id="orderPending">Pending </p>
+                  <% } %>
+  
+  
+              </div>
+            </div>
+  
+            <% } %>
+  
+          
+      <% } %>
+  
+
+      </div>
+
+    </div>
+  </section>
+
+
+  
+
+<script src="main.js"></script>
+
+</body>
+</html>
